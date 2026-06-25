@@ -1,4 +1,4 @@
-const invocation = document.getElementById("invocation")
+const formulaire = document.getElementById("formulaire")
 
 const invoquer = () => {
     // empeche de recharger la page
@@ -17,7 +17,7 @@ const invoquer = () => {
     const message = document.getElementById("message")
     message.textContent = msg
 
-    document.getElementById('invocation').classList.add('cache')
+    formulaire.classList.add('cache')
 
 
     // affiche la section 'resultat'
@@ -25,6 +25,14 @@ const invoquer = () => {
     resultat.classList.remove("cache");
 
 }
+const btnRecommencer = document.getElementById("recommencer")
 
-addEventListener("submit", invoquer)
+const recommencer = () => {
+    resultat.classList.add('cache')
+    formulaire.classList.remove("cache");
+
+}
+formulaire.addEventListener("submit", invoquer)
+btnRecommencer.addEventListener("click", recommencer)
+
 

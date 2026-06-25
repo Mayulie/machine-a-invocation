@@ -13,10 +13,10 @@
     <main class="container">
         <section>
             <h1> La Machine à Invocation</h1>
-            <form id="invocation">
+            <form id="formulaire" class="formulaire">
                 <label for="prenom">Prénom</label>
                 <input id="prenom" value ="Elisa" />
-                <br>
+                
                 <label for="creature">Choisis ta créature</label>
                 <select id="creature">
                     <option>
@@ -32,13 +32,14 @@
                         🦊 le Renard-Refacto
                     </option>
                 </select>
-                <br>
-                <button type="submit">Invoque ta créature</button>
+                
+                <button type="submit" class="btn-invoque">Invoque ta créature</button>
             </form>
         </section>
 
         <section id="resultat" class="cache">
             <p id="message">a entendu ton appel et te suivra tout le Bloc 1 !</p>
+            <button id="recommencer">Renvoyer la créature</button>
         </section>
     </main>
 </body>
